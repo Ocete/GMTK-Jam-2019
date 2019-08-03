@@ -130,7 +130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 142507696}
   - component: {fileID: 142507697}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Triangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -229,7 +229,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bae159d19b3d27d47a13bd2addc8f3ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  avoidableObjects:
+    serializedVersion: 2
+    m_Bits: 1
   player: {fileID: 713724356}
+  speed: 0.1
+  max_force: 1
+  mass: 10
+  interest_distance_in: 5
+  interest_distance_out: 8
+  wandering_time: 2
 --- !u!212 &358092468
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -386,7 +395,7 @@ GameObject:
   - component: {fileID: 713724359}
   - component: {fileID: 713724358}
   - component: {fileID: 713724357}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
